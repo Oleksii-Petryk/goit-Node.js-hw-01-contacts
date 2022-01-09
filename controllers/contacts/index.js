@@ -1,10 +1,13 @@
-module.exports = [
-   './listContacts.js',
-   './addContact.js',
-   './getContactById.js',
-   './removeContact.js',
-].reduce((obj, file) => {
-   const m = require(file);
-   Object.assign(obj, m);
-   return obj;
-}, {});
+const readContact = require('./readContact');
+const listContacts = require('./listContacts');
+const getContactById = require('./getContactById');
+const addContact = require('./addContact');
+const removeContact = require('./removeContact');
+
+module.exports = {
+   readContact,
+   listContacts,
+   getContactById,
+   addContact,
+   removeContact,
+};

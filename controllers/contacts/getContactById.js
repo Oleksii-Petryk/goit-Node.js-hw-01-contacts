@@ -6,4 +6,8 @@ const getContactById = async (contactId) => {
     return contact;
 };
 
+// const getContactById = () => {
+//     console.log("Хочу получить контакт по ID");
+// };
+
 module.exports = getContactById;
