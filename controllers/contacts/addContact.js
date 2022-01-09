@@ -3,7 +3,7 @@ const crypto = require('crypto');
 const path = require('path');
 const readContact = require('./readContact');
 
-const contactsPath = path.join(__dirname, '../../', 'db', 'contacts.json');
+const contactsPath = path.join(__dirname, '..', '..', 'db', 'contacts.json');
 
 const addContact = async (name, email, phone) => {
     const contacts = await readContact()

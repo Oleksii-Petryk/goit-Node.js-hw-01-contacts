@@ -2,7 +2,7 @@ const fs = require('fs/promises');
 const path = require('path');
 const readContact = require('./readContact');
 
-const contactsPath = path.join(__dirname, '../../', 'db', 'contacts.json');
+const contactsPath = path.join(__dirname, '..', '..', 'db', 'contacts.json');
 
 const removeContact = async (contactId) => {
     const contacts = await readContact();
